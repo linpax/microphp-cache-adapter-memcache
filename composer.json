@@ -1,0 +1,16 @@
+{
+  "name": "linpax/microphp-cache-adapter-memcache",
+  "description": "MicroPHP cache adapter for memcache(d)",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zcasper",
+      "email": "testuser@mail.linpax.org"
+    }
+  ],
+  "require": {
+    "linpax/microphp-driver-memcache": "dev-master",
+    "linpax/microphp-cache": "dev-master"
+  }
+}
