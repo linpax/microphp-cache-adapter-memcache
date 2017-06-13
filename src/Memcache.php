@@ -22,26 +22,26 @@ class Memcache implements AdapterInterface
 
     public function has($key)
     {
-        // TODO: Implement has() method.
+        return $this->driver->has($key);
     }
 
     public function get($key, $default = null)
     {
-        // TODO: Implement get() method.
+        return $this->driver->get($key) ?: $default;
     }
 
     public function set($key, $value, $ttl = null)
     {
-        // TODO: Implement set() method.
+        return $this->driver->set($key, $value, $ttl);
     }
 
     public function delete($key)
     {
-        // TODO: Implement delete() method.
+        return $this->driver->delete($key);
     }
 
     public function clear()
     {
-        // TODO: Implement clear() method.
+        $this->driver->clean();
     }
 }
